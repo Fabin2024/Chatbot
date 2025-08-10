@@ -14,7 +14,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 
-os.environ['OPENAI_API_KEY'] = config('OPENAI_API_KEY')
+os.environ['OPENAI_API_KEY'] = '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'
 persist_directory = 'db'
 
 
@@ -146,3 +146,4 @@ if vector_store and question:
 
         st.chat_message('ai').write(response)
         st.session_state.messages.append({'role': 'ai', 'content': response})
+
